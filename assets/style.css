@@ -161,10 +161,10 @@ img {
 footer {
     background-color: #115259;
     width: 100%;
-    height: 150px;
+    height: 200px;
     text-align: center;
     color: #E2E0DD;
-    padding-top: 50px;
+    padding: 50px 20px;
 }
 
 /* 4. Navigation Styles
