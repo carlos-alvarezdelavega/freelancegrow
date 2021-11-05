@@ -91,10 +91,17 @@ p {
     margin: 0 0 15px;
 }
 
-a {
+.a-light {
     font-family: 'Work Sans', Helvetica, sans-serif;
     font-size: 16px;
-    color: #FE725F;
+    color: #FE9789;
+    font-weight: 600;
+}
+.a-dark {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #115259;
+    font-weight: 600;
 }
 
 ul {
