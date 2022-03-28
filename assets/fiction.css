@@ -339,3 +339,44 @@ img.logo {
 .box li {
     list-style: initial;
 }
+
+
+.divider {
+    width: 100%;
+    padding: 0px 70px;
+}
+
+.divider table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #BFB0AC;
+    border-spacing: 30px;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.divider .square {
+    background-color: #2AC7AF;
+    width: 50px;
+    height: 50px;
+    margin-right: 5em;
+}
+
+.divider .number {
+    width: 200px;
+    text-align: left;
+    vertical-align: middle;
+    font-variant-numeric: slashed-zero;
+    padding-left: 10px;
+    border-right: 0.5px solid #BFB0AC;
+}
+
+@media (max-width: 920px) {
+    .divider {
+        padding: 0px 20px;
+    }
+    .divider .number {
+        border-right: none;
+    }
+}
