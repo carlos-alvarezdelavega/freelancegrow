@@ -1,0 +1,341 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Navigation Styles
+  4. Grid styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    background-color: #F1E9D9;
+}
+
+/* 2. Typography Styles
+======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Work Sans', Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 3px;
+  margin-bottom: 15px;
+  transition: font-size 0.25s ease;  
+}
+
+h1 {
+    font-size: calc(60px / 1.5);
+    line-height: 0.85;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 3px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 10px;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1;
+}
+@media(min-width: 720px) {
+    h1 {
+      font-size: calc(60px / 1.25);
+    }
+    h2 {
+      font-size: 26px;
+    }
+}
+
+@media(min-width: 1024px) {
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+
+}
+
+p {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 15px;
+}
+
+.a-light {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #FE9789;
+    font-weight: 600;
+}
+.a-dark {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #115259;
+    font-weight: 600;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.text-light {
+    color: #E2E0DD;
+    margin-bottom: 20px;
+}
+
+/* 3. Navigation Styles
+======================================== */
+
+.fixed-nav-bar {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: #2AC7AF;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+  
+.fixed-nav-bar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #2AC7AF;
+    text-align: left;
+}
+
+.fixed-nav-bar li {
+    display: inline-block;
+    align-items: left;
+}
+  
+  .fixed-nav-bar li a {
+    display: block;
+    padding: 20px;
+    border-right: 1px solid #E2E0DD;
+    text-decoration: none;
+}
+  
+.fixed-nav-bar li a:hover,
+.fixed-nav-bar li a:active,
+.fixed-nav-bar li a:focus {
+    color: #443E3D;
+    text-decoration: underline;
+    font-weight: 600;
+    background-color:#80FBE8;
+} 
+  
+.fixed-nav-bar .logo {
+    display: block;
+    float: left;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+img.logo {
+    width: 5em;
+    height: auto;
+}
+
+.nav-anchor {
+    color: #443E3D;
+    text-decoration: none !important;
+}
+  
+/* responsive menu */
+
+.fixed-nav-bar .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.fixed-nav-bar .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+  
+.fixed-nav-bar .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+  
+.fixed-nav-bar .menu-icon .navicon:before,
+.fixed-nav-bar .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+  
+.fixed-nav-bar .menu-icon .navicon:before {
+    top: 5px;
+}
+  
+.fixed-nav-bar .menu-icon .navicon:after {
+    top: -5px;
+}
+  
+/* menu btn */
+  .fixed-nav-bar .menu-btn {
+    display: none;
+}
+  
+.fixed-nav-bar .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+  
+.fixed-nav-bar .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+  
+.fixed-nav-bar .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}  
+
+.fixed-nav-bar .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+  
+.fixed-nav-bar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.fixed-nav-bar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+@media (min-width: 48em) {
+    .fixed-nav-bar li {
+      float: left;
+}
+
+.fixed-nav-bar li a {
+      padding: 20px 30px;
+}
+
+.fixed-nav-bar .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+}
+
+.fixed-nav-bar .menu-icon {
+      display: none;
+    }
+}
+
+/* 4. Landing Page
+======================================== */
+
+.container {
+    display: grid;
+    width: 100%;
+    gap: 1.5em;
+    align-content: space-between;
+    align-items: center;
+    justify-items: center;
+    padding: 70px 100px;
+    flex-direction: row;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2em;
+    grid-template-rows: repeat(2, 1fr);
+}
+@media (max-width: 920px) {
+    .container {
+        padding: 70px 15px;
+        display: block;
+    }
+    .box {
+        transition: width 0.25s ease;
+        width: 80%;
+    }
+}
+
+.item-left {
+    line-height: 2em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item-left h1 {
+    color:#115259;
+    line-height: 1;
+}
+
+.item-right img {
+    width: 80%;
+}
+
+@media (max-width: 920px) {
+    .item-right img {
+        display: none;
+    }
+}
+
+.item-right {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box {
+    background: rgba(128, 251, 232, 0.5);
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.box li {
+    list-style: initial;
+}
