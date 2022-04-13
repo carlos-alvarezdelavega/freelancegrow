@@ -432,17 +432,21 @@ img.logo {
 .container-ourwork {
     display: grid;
     width: 100%;
-    gap: 1.5em;
     padding: 10px 70px;
     column-gap: 2em;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    align-items: baseline;
+}
+
+.container-ourwork .apprenticeship {
+    align-items: center;
 }
 
 @media (max-width: 920px) {
     .container-ourwork {
         padding: 10px 15px;
         display: block;
+        align-items: center;
     }
 }
 
@@ -452,7 +456,6 @@ img.logo {
 }
 
 .col2-top {
-    padding-top: 40px;
     grid-column-start: 3;
     grid-column-end: 5;
 }
@@ -483,9 +486,39 @@ img.logo {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 3;
+    
 }
 
-.col1 span {
-    
+.apprenticeship {
+    width: 50px;
+    height: 50px;
+    background-color:rgba(128, 251, 232, 0.5);
+    border-radius: 5px;
+    border: 3px dashed #2AC7AF;
+}
+
+.entry {
+    width: 50px;
+    height: 80px;
+    background-color:#2AC7AF;
+    border-radius: 5px;
+}
+
+.mid {
+    width: 50px;
+    height: 120px;
+    background-color:#2AC7AF;
+    border-radius: 5px;
+}
+
+.expert {
+    width: 50px;
+    height: 200px;
+    background-color:#2AC7AF;
+    border-radius: 5px;
+}
+
+.footnote {
+    font-weight: 200;
+    font-style: italic;
 }
