@@ -1,4 +1,4 @@
-// alert ('This is a fiction!');
+// alert ('The following webpage is a *speculative* concept. We will NOT develop it.');
 
 //DOM
 

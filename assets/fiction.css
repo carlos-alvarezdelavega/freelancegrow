@@ -42,6 +42,7 @@ h6 {
   line-height: 3px;
   margin-bottom: 15px;
   transition: font-size 0.25s ease;  
+  color: #443E3D;
 }
 
 h1 {
@@ -88,6 +89,7 @@ p {
     font-size: 16px;
     line-height: 23px;
     margin: 0 0 15px;
+    color: #443E3D;
 }
 
 .a-light {
@@ -253,7 +255,7 @@ img.logo {
 .fixed-nav-bar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
 }
-@media (min-width: 48em) {
+@media (min-width: 920px) {
     .fixed-nav-bar li {
       float: left;
 }
@@ -297,7 +299,11 @@ img.logo {
         transition: width 0.25s ease;
         width: 80%;
     }
+    img {
+        width: 80%;
+    }
 }
+
 
 .item-left {
     line-height: 2em;
@@ -389,6 +395,7 @@ img.logo {
     color: #FAFAFA;
 }
 
+
 .divider-dm {
     width: 100%;
     padding: 0px 70px;
@@ -441,6 +448,7 @@ img.logo {
 .container-ourwork .apprenticeship {
     align-items: center;
 }
+.container-ourwork p {color: #FAFAFA;}
 
 @media (max-width: 920px) {
     .container-ourwork {
@@ -453,13 +461,22 @@ img.logo {
 .col1-top {
     grid-column-start: 1;
     grid-column-end: 3;
+    
+}
+.col1-top h2 {
+    color: #FAFAFA;
 }
 
+.col1-top p {
+    color: #FAFAFA;
+}
 .col2-top {
     grid-column-start: 3;
     grid-column-end: 5;
 }
-
+.col2-top p  {
+    color: #FAFAFA;
+}
 .col2-top li{
     list-style: decimal;
 }
@@ -469,6 +486,8 @@ img.logo {
     grid-row-start: 2;
     grid-row-end: 3;
 }
+.col1 h4{color: #FAFAFA;}
+.col1 p {color: #FAFAFA;}
 
 .col2 {
     grid-column-start: 2;
@@ -476,18 +495,26 @@ img.logo {
     grid-row-start: 2;
     grid-row-end: 3;
 }
+.col2 h4{color: #FAFAFA;}
+.col2 p {color: #FAFAFA;}
+
 .col3 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
 }
+.col3 h4{color: #FAFAFA;}
+.col3 p {color: #FAFAFA;}
+
 .col4 {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
     
 }
+.col4 h4{color: #FAFAFA;}
+.col4 p {color: #FAFAFA;}
 
 .apprenticeship {
     width: 50px;
@@ -521,4 +548,23 @@ img.logo {
 .footnote {
     font-weight: 200;
     font-style: italic;
+}
+
+.item-right-figure {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.img-mobile {visibility: hidden;}
+
+@media (max-width: 920px) {
+    .img-desktop {
+        display: none;
+    }
+    .img-mobile {
+        visibility: visible;
+        width: 80%;
+    }
 }
