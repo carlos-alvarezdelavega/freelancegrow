@@ -288,7 +288,7 @@ img.logo {
     padding: 70px 100px;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 2em;
-    grid-template-rows: repeat(2, 1fr);
+    
 }
 @media (max-width: 920px) {
     .container {
@@ -299,11 +299,11 @@ img.logo {
         transition: width 0.25s ease;
         width: 80%;
     }
-    img {
-        width: 80%;
+    .dark-mode .container .item-right table.client-buddy{
+        border-spacing: 10px;
+        text-align: center;
     }
 }
-
 
 .item-left {
     line-height: 2em;
@@ -325,6 +325,9 @@ img.logo {
 @media (max-width: 920px) {
     .item-right img {
         display: none;
+    }
+    .item-right .dashboard{
+        display: inherit;
     }
 }
 
@@ -557,14 +560,41 @@ img.logo {
     grid-row-end: 3;
 }
 
-.img-mobile {visibility: hidden;}
+.img-mobile {display: none;}
 
 @media (max-width: 920px) {
     .img-desktop {
         display: none;
     }
     .img-mobile {
-        visibility: visible;
-        width: 80%;
+        display: inherit;
+        width: 75%;
     }
+}
+
+/* ==== AI Features section ==== */
+.dark-mode .container .item-left h2 {color: #F2F2F2}
+.dark-mode .container .item-left p {color: #F2F2F2}
+
+.dark-mode .container .item-right h3 {color: #F2F2F2}
+.dark-mode .container .item-right p {color: #F2F2F2}
+
+.dark-mode .container .item-right table.client-buddy{
+    border-spacing: 30px;
+    text-align: center;
+}
+
+.dark-mode .container .item-right td.circle  {
+    background-color: #2AC7AF;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.dark-mode .container .item-right .circle img.icon {
+    width: 70%;
+}
+
+.dark-mode .container .item-left img.dashboard {
+    width: 80%;
 }
