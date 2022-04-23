@@ -294,7 +294,7 @@ img.logo {
     .container {
         padding: 70px 15px;
         display: block;
-        margin-left: 30px;
+        margin: 5px 10px;
     }
     .box {
         transition: width 0.25s ease;
@@ -460,7 +460,7 @@ img.logo {
         padding: 10px 15px;
         display: block;
         align-items: center;
-        margin-left: 30px;
+        margin: 5px 10px;
     }
 }
 
@@ -653,7 +653,7 @@ img.logo {
     font-family: 'Work Sans', Helvetica, sans-serif;
     border-radius: 200px;
     border: none;
-    width: 300px;
+    width: 200px;
     color: #F2F2F2;
     cursor: pointer;
 }
@@ -675,6 +675,6 @@ img.logo {
     padding: 10px;
     font-family: 'Work Sans', Helvetica, sans-serif;
     background: transparent;
-    width: 300px;
+    width: 200px;
     text-align: center;
 }
