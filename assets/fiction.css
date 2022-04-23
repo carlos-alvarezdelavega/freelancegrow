@@ -294,6 +294,7 @@ img.logo {
     .container {
         padding: 70px 15px;
         display: block;
+        margin-left: 30px;
     }
     .box {
         transition: width 0.25s ease;
@@ -459,6 +460,7 @@ img.logo {
         padding: 10px 15px;
         display: block;
         align-items: center;
+        margin-left: 30px;
     }
 }
 
@@ -616,4 +618,63 @@ img.logo {
         margin: auto;
         display: inherit;
     }
+}
+
+.item-left li {
+    list-style:initial;
+}
+
+.login {
+    border: 2px solid #115259;
+    border-radius: 5px;
+    width: 90%;
+    margin-top: 130px;
+    padding: 10px 20px;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    text-align: center;
+    justify-self: center;
+}
+
+@media (max-width: 920px) {
+    .login {
+        margin-top: 50px;
+    }
+}
+
+.cta {
+    color:#115259;
+    font-size: 24px;
+}
+
+.google-button {
+    background-color:#FE725F;
+    padding: 15px;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    border-radius: 200px;
+    border: none;
+    width: 300px;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+
+.sign-up {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-weight: 500;
+    color: inherit;
+    background-color: transparent;
+    border: 1.5px solid #115259;
+    border-radius: 200px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.email-form {
+    border: 1px solid;
+    border-radius: 200px;
+    padding: 10px;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    background: transparent;
+    width: 300px;
+    text-align: center;
 }
