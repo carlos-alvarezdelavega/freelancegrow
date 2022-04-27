@@ -27,6 +27,7 @@ body {
     overflow-x: hidden;
     width: 100%;
     text-rendering: optimizeLegibility;
+    background-color: #F1E9D9;
 }
 
 /* 2. Typography Styles
