@@ -176,7 +176,7 @@ footer {
 }
 
 /* 4. Navigation Styles
-======================================== */
+======================================== 
 
 .fixed-nav-bar {
     position: fixed;
@@ -227,7 +227,7 @@ footer {
     text-decoration: none !important;
 }
   
-/* responsive menu */
+/* responsive menu 
 
 .fixed-nav-bar .menu {
     clear: both;
@@ -272,7 +272,7 @@ footer {
     top: -5px;
 }
   
-/* menu btn */
+/* menu btn 
   .fixed-nav-bar .menu-btn {
     display: none;
 }
@@ -316,9 +316,9 @@ footer {
 .fixed-nav-bar .menu-icon {
       display: none;
     }
-}
+} */
 
-/* 6. Component Styles
+/* 5. Component Styles
 ======================================== */
 
 .button-primary {
