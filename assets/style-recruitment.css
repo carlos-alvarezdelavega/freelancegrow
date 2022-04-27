@@ -1,0 +1,367 @@
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Navigation Styles
+  5. Page Styles
+  6. Component Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    background-color: #F1E9D9;
+}
+
+/* 2. Typography Styles
+======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Work Sans', Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 3px;
+  margin-bottom: 15px;
+  transition: font-size 0.25s ease;  
+}
+
+h1 {
+    font-size: calc(70px / 1.5);
+    line-height: 0.85;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 3px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 10px;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1;
+}
+@media(min-width: 720px) {
+    h1 {
+      font-size: calc(65px / 1.25);
+    }
+    h2 {
+      font-size: 28px;
+    }
+}
+
+@media(min-width: 1024px) {
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+      font-size: 38px;
+    }
+
+}
+
+p {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 15px;
+}
+
+.a-light {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #FE9789;
+    font-weight: 600;
+}
+.a-dark {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #115259;
+    font-weight: 600;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.text-light {
+    color: #E2E0DD;
+    margin-bottom: 20px;
+}
+
+/* 3. Structure Styles
+======================================== */
+.photo-hero {
+    min-height: 720px;
+    background-color: #E2E0DD;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+ 
+.container {
+    margin: 50px;
+    max-width: 720px;   
+    padding-top: 2em; 
+}
+
+
+.photo-hero-text {
+    padding: 20px 30px;
+    color: #443E3D;
+}
+
+.study-stages {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #115259;
+    display: flex;
+}
+
+.faq-container {
+    height: auto;
+    background-color: #E2E0DD;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+footer {
+    background-color: #115259;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    color: #E2E0DD;
+    padding: 50px 20px;
+}
+
+/* 4. Navigation Styles
+======================================== */
+
+.fixed-nav-bar {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: #2AC7AF;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+  
+.fixed-nav-bar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #2AC7AF;
+    text-align: left;
+}
+
+.fixed-nav-bar li {
+    display: inline-block;
+    align-items: left;
+}
+  
+  .fixed-nav-bar li a {
+    display: block;
+    padding: 20px;
+    border-right: 1px solid #E2E0DD;
+    text-decoration: none;
+}
+  
+.fixed-nav-bar li a:hover,
+.fixed-nav-bar li a:active,
+.fixed-nav-bar li a:focus {
+    color: #443E3D;
+    text-decoration: none;
+    background-color:#80FBE8;
+} 
+  
+.fixed-nav-bar .logo {
+    display: block;
+    float: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+  .nav-anchor {
+    color: #443E3D;
+    text-decoration: none !important;
+}
+  
+/* responsive menu */
+
+.fixed-nav-bar .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+.fixed-nav-bar .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+  
+.fixed-nav-bar .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+  
+.fixed-nav-bar .menu-icon .navicon:before,
+.fixed-nav-bar .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+  
+.fixed-nav-bar .menu-icon .navicon:before {
+    top: 5px;
+}
+  
+.fixed-nav-bar .menu-icon .navicon:after {
+    top: -5px;
+}
+  
+/* menu btn */
+  .fixed-nav-bar .menu-btn {
+    display: none;
+}
+  
+.fixed-nav-bar .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+  
+.fixed-nav-bar .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+  
+.fixed-nav-bar .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}  
+
+.fixed-nav-bar .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+  
+.fixed-nav-bar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.fixed-nav-bar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+  
+@media (min-width: 48em) {
+    .fixed-nav-bar li {
+      float: left;
+}
+
+.fixed-nav-bar li a {
+      padding: 20px 30px;
+}
+
+.fixed-nav-bar .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+}
+
+.fixed-nav-bar .menu-icon {
+      display: none;
+    }
+}
+
+/* 6. Component Styles
+======================================== */
+
+.button-primary {
+    display: inline-block;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: normal;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #443E3D;
+    background-color: #E2E0DD;
+    border-radius: 5px;
+}
+
+.button-primary:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #E2E0DD;
+    color: #E2E0DD;
+
+}
+
+.button-secondary {
+    display: inline-block;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: normal;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #115259;
+    color: #E2E0DD;
+    border-radius: 5px;
+}
+
+.button-secondary:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #115259;
+    color: #115259;
+}
