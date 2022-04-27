@@ -1,4 +1,4 @@
-// alert ('The following webpage is a *speculative* concept. We will NOT develop it.');
+alert ('Freelance Grow is a design fiction, NOT a real freelancing website.');
 
 //DOM
 
