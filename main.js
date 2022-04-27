@@ -1,7 +1,8 @@
-window.onload = alert ('Freelance Grow is a design fiction, NOT a real freelancing website.');
+window.onload = alert(
+  "Freelance Grow is a design fiction, NOT a real freelancing website."
+);
 
-//DOM
+// DOM
+const onboarding = document.getElementById("onboarding");
 
-//Global Variables
-
-//Event Handlers
+// Global Variables
