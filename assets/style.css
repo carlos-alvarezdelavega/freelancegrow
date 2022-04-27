@@ -41,7 +41,6 @@ h5,
 h6 {
   font-family: 'Work Sans', Helvetica, sans-serif;
   font-weight: 700;
-  line-height: 3px;
   margin-bottom: 15px;
   transition: font-size 0.25s ease;  
 }
