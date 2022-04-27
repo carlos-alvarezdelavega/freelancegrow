@@ -40,6 +40,7 @@ h1 {
     font-weight: 700;
     margin-bottom: 15px;
     text-align: center;
+    color: #443E3D;
 }
 
 h2 {
@@ -59,6 +60,7 @@ p {
     font-size: 16px;
     line-height: 23px;
     margin: 0 0 15px;
+    color: #443E3D;
 }
 
 .a-light {
