@@ -611,7 +611,6 @@ img.logo {
     }
     .img-mobile {
         display: inherit;
-        width: 75%;
     }
     .dark-mode .container .item-right .circle img.icon {
         width: 70%;
@@ -658,6 +657,18 @@ img.logo {
     cursor: pointer;
 }
 
+.google-button:hover {
+    background-color:#FE725F;
+    box-shadow: 5px 5px 28px 4px rgba(254,114,95,0.52);
+    padding: 15px;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    border-radius: 200px;
+    border: none;
+    width: 200px;
+    color: #F2F2F2;
+    cursor: pointer;
+}
+
 .sign-up {
     font-family: 'Work Sans', Helvetica, sans-serif;
     font-weight: 500;
@@ -677,4 +688,27 @@ img.logo {
     background: transparent;
     width: 200px;
     text-align: center;
+}
+
+/*==== Footer ====*/
+
+footer {
+  display: block;
+  background-color: #115259;
+  padding: 70px 15px;
+  color: #FAFAFA;
+  margin: 0;
+  text-align: center;
+}
+
+footer a {
+  color: #FAFAFA;
+}
+
+footer p {
+    color: #FAFAFA;
+}
+
+footer img {
+    max-width: 50px;
 }
