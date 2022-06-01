@@ -44,15 +44,21 @@ h1 {
 }
 
 h2 {
+    font-family: 'Work Sans', Helvetica, sans-serif;
     font-size: 26px;
     margin-top: 10px;
     line-height: 1;
+    text-align: center;
+    color: #443E3D;
 }
 
 h3 {
+    font-family: 'Work Sans', Helvetica, sans-serif;
     font-size: 24px;
     margin-top: 10px;
     line-height: 1;
+    text-align: center;
+    color: #443E3D;
 }
 
 p {
@@ -95,6 +101,11 @@ img {
 .text-light {
     color: #E2E0DD;
     margin-bottom: 20px;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
 }
 
 /* 3. Structure Styles
